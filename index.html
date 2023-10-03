@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container-fluid ms-5 me-5">
+          <a href="#" class="navbar-brand ms-5"
+            ><img
+              src="https://s3-alpha-sig.figma.com/img/e0ef/4f61/967cc7d034dc411ca2013fff2fed228d?Expires=1697414400&Signature=Tmo86em8dU4MV9UwAFe0GIREINC23PXDE7ELh-R0qQAXdAzAxj06tLLUzCz5aaklBVY0R0W3WEbsVCUTPpGxEjK~DQxFtrv9jYSAwPCSyXFr8MvuqBD-tNupe2SDXVlTXLETmR~gNQiSX7SW4Z8Hqyu-DpdLsb~tcBEZx8kefCWQf62VX4b18po8o2sZhCheAjmh5JgwKk~2DrBmSwp~4oZ09Y1oZKpYchUC35a3Hkdvh0959ykdS-Y37BID1XTqrOsHJrG8PcrW9Ptakko1ZloGXD9x08KnPVn4kiaWTFaLDikLNkViXOX48svR-zK0UuD0jHmlO7D9prZdfhdvdQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+              width="96px"
+              height="46px"
+              ;
+          /></a>
+
+          <ul class="navbar-nav gap-5" style="align-items: center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+            <li class="nav-item me-5"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img
+                  src="https://s3-alpha-sig.figma.com/img/28c2/2d0a/f96e56b91aae9daed41ea781c3d6dc58?Expires=1697414400&Signature=MyGzYHbCsxfMgMFxs6ltkSWTJQfpF0FhrJjVgcNg9-tZLbKH7nf50raBnwoz-SrmqILU~0mLQ69Af9RCSM09YblY0~T9-EsYVKWiuwkMpKxzmwWF9AlDu9h23traLOnM0tzX-sC-dc5Sqij-H2xesvYn1iZr3~6ZXtAUSoGWvzBHwcTDqO~iTVt~0Nudn2JEBCyA1KC2YNF1rd3Eql5znL5-By6aPWgKEh-JxnsrgYSItOsvvy~Ub02hgWLEOYtvU7~~d8Ha7RQFV1EXbqkwbt7yTa6fWbBsfxuRX7wb~B5EPMZOeVUhmQDL6J-tVqjdG8Eg4HeKjD3yOswPr9389A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="profile-img"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container pt-5">
+        <div class="hero">
+          <h3 id="hero-header">Trending now</h3>
+          <h1 id="hero-main">Mike’s famous salad with cheese</h1>
+          <h3 id="hero-footer">By John Mike</h3>
+        </div>
+        <h3 class="pt-3" id="container-title">Search For Recipes</h3>
+
+        <div class="item-search pt-3">
+          <form class="d-flex" role="search" id="searchInput">
+            <div
+              class="form-control me-2 d-flex"
+              placeholder="Search"
+              aria-label="Search"
+              style="
+                background: #f3f3f3;
+                align-items: center;
+                border-radius: 2px 0px 0px 2px;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="18"
+                viewBox="0 0 17 18"
+                fill="none"
+              >
+                <path
+                  d="M7.79167 13.9583C10.9213 13.9583 13.4583 11.4213 13.4583 8.29167C13.4583 5.16205 10.9213 2.625 7.79167 2.625C4.66205 2.625 2.125 5.16205 2.125 8.29167C2.125 11.4213 4.66205 13.9583 7.79167 13.9583Z"
+                  stroke="#ADADAD"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.875 15.375L11.7937 12.2938"
+                  stroke="#ADADAD"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div
+                id="search"
+                contenteditable="true"
+                style="
+                  width: auto;
+                  color: var(--Grey, #adadad);
+                  font-family: Poppins;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  padding-left: 10px;
+                  outline: none;
+                "
+              >
+                Search for recipes...
+              </div>
+            </div>
+
+            <button class="btn btn-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.5 4C7.63401 4 4.5 7.13401 4.5 11C4.5 14.866 7.63401 18 11.5 18C15.366 18 18.5 14.866 18.5 11C18.5 7.13401 15.366 4 11.5 4ZM2.5 11C2.5 6.02944 6.52944 2 11.5 2C16.4706 2 20.5 6.02944 20.5 11C20.5 15.9706 16.4706 20 11.5 20C6.52944 20 2.5 15.9706 2.5 11Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.4429 15.9429C16.8334 15.5524 17.4666 15.5524 17.8571 15.9429L22.2071 20.2929C22.5977 20.6834 22.5977 21.3166 22.2071 21.7071C21.8166 22.0977 21.1834 22.0977 20.7929 21.7071L16.4429 17.3571C16.0524 16.9666 16.0524 16.3334 16.4429 15.9429Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="filter-button pt-5">
+          <button type="button" id="all-recepie" class="btn">
+            All Recipes
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+            >
+              <path
+                d="M14.2697 13L8.9072 7.63749L10.439 6.10565L17.3334 13L10.439 19.8943L8.9072 18.3625L14.2697 13Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button type="button" id="veg-recepie" class="btn">
+            Veg Recipes Only
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+            >
+              <path
+                d="M14.2697 13L8.9072 7.63749L10.439 6.10565L17.3334 13L10.439 19.8943L8.9072 18.3625L14.2697 13Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button type="button" id="non-veg-recepie" class="btn">
+            Non Veg Recipes
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+            >
+              <path
+                d="M14.2697 13L8.9072 7.63749L10.439 6.10565L17.3334 13L10.439 19.8943L8.9072 18.3625L14.2697 13Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="main-container pt-5 p-3">
+          <div class="side-filter">
+            <span>Filters</span>
+            <span id="rating">Rating</span>
+            <label for="above4rating" class="d-flex gap-3">
+              <input
+                type="checkbox"
+                name=""
+                id="above4rating"
+                class="checkbox-input"
+              />
+              <span class="checkboxSpan">4 and Above</span>
+            </label>
+            <label for="below4rating" class="d-flex gap-3">
+              <input type="checkbox" name="" id="below4rating" />
+              <span class="checkboxSpan">Below 4</span>
+            </label>
+          </div>
+          <div class="receipies"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer d-flex flex-column">
+        <div
+          class="footerDescription d-flex justify-content-around custom-footer"
+        >
+          <div class="companyFooter">
+            <div class="company-footer-image"></div>
+            <div class="company-footer-description">
+              Cookpal is a recipe website with a wide variety of delicious
+              recipes, easy-to-use search function. Join our community and let's
+              cook together!
+            </div>
+          </div>
+          <div class="company-pages">
+            <ul>
+              <span>Company</span>
+              <li>Home</li>
+              <li>Explore</li>
+              <li>Team</li>
+              <li>About us</li>
+              <li>Activity</li>
+            </ul>
+          </div>
+          <div class="company-resources">
+            <ul>
+              <span>Resources</span>
+              <li>Blog</li>
+              <li>Use Cases</li>
+              <li>Testimonials</li>
+              <li>Insights</li>
+            </ul>
+          </div>
+          <div class="companyFooterSubscribe">
+            <div class="company-footer-image"></div>
+            <div class="company-footer-subscribe-description">
+              Ut risus mattis interdum faucibus facilisi. Facilisi purus
+              accumsan aliquam.
+            </div>
+            <nav class="navbar">
+              <div class="container-fluid">
+                <form class="d-flex justify-content-around" role="search">
+                  <div
+                    class="form-control me-2 d-flex justify-content-between border-2 border-dark"
+                    type="search"
+                    placeholder="Your Email"
+                    aria-label="Search"
+                    style="padding: 10px 12px; width: 280px"
+                  >
+                    <span>Your Email</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.99996 1.66663C5.41663 1.66663 1.66663 5.41663 1.66663 9.99996C1.66663 14.5833 5.41663 18.3333 9.99996 18.3333C11.5 18.3333 12.9166 17.9166 14.1666 17.25C14.5833 17 14.6666 16.5 14.5 16.0833C14.25 15.6666 13.75 15.5833 13.3333 15.75C10.1666 17.5833 6.08329 16.5 4.24996 13.3333C2.41663 10.1666 3.49996 6.08329 6.66663 4.24996C9.83329 2.41663 13.9166 3.49996 15.75 6.66663C16.3333 7.66663 16.6666 8.83329 16.6666 9.99996V10.6666C16.6666 11.5 16 12.1666 15.1666 12.1666C14.3333 12.1666 13.6666 11.5 13.6666 10.6666V7.08329C13.6666 6.58329 13.3333 6.24996 12.8333 6.24996C12.4166 6.24996 12.0833 6.49996 12 6.91663C10.3333 5.74996 7.91663 6.16663 6.74996 7.83329C5.58329 9.49996 5.99996 11.9166 7.66663 13.0833C9.24996 14.1666 11.3333 13.9166 12.5833 12.5C13.6666 13.8333 15.5833 14.0833 16.9166 13.0833C17.6666 12.5 18.1666 11.5833 18.1666 10.5833V9.99996C18.3333 5.41663 14.5833 1.66663 9.99996 1.66663ZM9.99996 12.0833C8.83329 12.0833 7.91663 11.1666 7.91663 9.99996C7.91663 8.83329 8.83329 7.91663 9.99996 7.91663C11.1666 7.91663 12.0833 8.83329 12.0833 9.99996C12.0833 11.1666 11.1666 12.0833 9.99996 12.0833Z"
+                        fill="#253D4E"
+                      />
+                    </svg>
+                  </div>
+
+                  <button class="btn btn-success" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer-contact d-flex justify-content-center pb-5">
+          <div class="d-flex gap-5">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                background-color: black;
+                border-radius: 50%;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="16"
+                viewBox="0 0 15 16"
+                fill="none"
+                style="margin: 7px"
+              >
+                <path
+                  d="M7.50001 1.85134C9.50258 1.85134 9.7398 1.859 10.5306 1.89508C11.2619 1.92842 11.659 2.0506 11.9233 2.15331C12.2734 2.28937 12.5232 2.45189 12.7856 2.71432C13.0481 2.97678 13.2106 3.22662 13.3467 3.5767C13.4494 3.84098 13.5716 4.2381 13.6049 4.96934C13.641 5.76018 13.6486 5.9974 13.6486 7.99996C13.6486 10.0025 13.641 10.2398 13.6049 11.0306C13.5716 11.7618 13.4494 12.159 13.3467 12.4232C13.2106 12.7733 13.0481 13.0232 12.7857 13.2856C12.5232 13.5481 12.2734 13.7106 11.9233 13.8466C11.659 13.9493 11.2619 14.0715 10.5306 14.1049C9.73992 14.141 9.50273 14.1486 7.50001 14.1486C5.49727 14.1486 5.26011 14.141 4.46936 14.1049C3.73811 14.0715 3.34099 13.9493 3.07671 13.8466C2.72663 13.7106 2.47679 13.5481 2.21436 13.2856C1.95193 13.0232 1.78937 12.7733 1.65332 12.4232C1.55061 12.159 1.42843 11.7618 1.39508 11.0306C1.359 10.2398 1.35135 10.0025 1.35135 7.99996C1.35135 5.9974 1.359 5.76018 1.39508 4.96934C1.42843 4.2381 1.55061 3.84098 1.65332 3.5767C1.78937 3.22662 1.9519 2.97678 2.21436 2.71435C2.47679 2.45189 2.72663 2.28937 3.07671 2.15331C3.34099 2.0506 3.73811 1.92842 4.46936 1.89508C5.2602 1.859 5.49742 1.85134 7.50001 1.85134ZM7.50001 0.5C5.46312 0.5 5.20771 0.508634 4.40776 0.545133C3.60947 0.581543 3.06427 0.708339 2.58721 0.893724C2.09402 1.08539 1.67577 1.34184 1.25879 1.75879C0.841843 2.17576 0.585393 2.59402 0.393755 3.08721C0.20834 3.56426 0.0815436 4.10946 0.0451333 4.90774C0.00863368 5.7077 0 5.9631 0 7.99996C0 10.0368 0.00863368 10.2923 0.0451333 11.0922C0.0815436 11.8905 0.20834 12.4357 0.393755 12.9127C0.585393 13.4059 0.841843 13.8242 1.25879 14.2412C1.67577 14.6581 2.09402 14.9146 2.58721 15.1062C3.06427 15.2916 3.60947 15.4184 4.40776 15.4548C5.20771 15.4913 5.46312 15.4999 7.50001 15.4999C9.53688 15.4999 9.79228 15.4913 10.5922 15.4548C11.3905 15.4184 11.9357 15.2916 12.4128 15.1062C12.906 14.9146 13.3242 14.6581 13.7412 14.2412C14.1582 13.8242 14.4146 13.4059 14.6063 12.9127C14.7917 12.4357 14.9185 11.8905 14.9549 11.0922C14.9914 10.2923 15 10.0368 15 7.99996C15 5.9631 14.9914 5.7077 14.9549 4.90774C14.9185 4.10946 14.7917 3.56426 14.6063 3.08721C14.4146 2.59402 14.1582 2.17576 13.7412 1.75879C13.3242 1.34184 12.906 1.08539 12.4128 0.893724C11.9357 0.708339 11.3905 0.581543 10.5922 0.545133C9.79228 0.508634 9.53688 0.5 7.50001 0.5Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.50352 4.1521C5.37645 4.1521 3.65216 5.87639 3.65216 8.00342C3.65216 10.1305 5.37645 11.8548 7.50352 11.8548C9.63056 11.8548 11.3549 10.1305 11.3549 8.00342C11.3549 5.87639 9.63056 4.1521 7.50352 4.1521ZM7.50352 10.5034C6.12279 10.5034 5.00351 9.38415 5.00351 8.00342C5.00351 6.62272 6.12279 5.50344 7.50352 5.50344C8.88423 5.50344 10.0035 6.62272 10.0035 8.00342C10.0035 9.38415 8.88423 10.5034 7.50352 10.5034Z"
+                  fill="white"
+                />
+                <path
+                  d="M12.4068 3.99755C12.4068 4.49458 12.0038 4.89753 11.5067 4.89753C11.0097 4.89753 10.6068 4.49458 10.6068 3.99755C10.6068 3.50049 11.0097 3.09753 11.5067 3.09753C12.0038 3.09753 12.4068 3.50049 12.4068 3.99755Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                background-color: black;
+                border-radius: 50%;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+                viewBox="0 0 15 13"
+                fill="none"
+                style="margin: 8px"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15 2.1929C14.4485 2.43789 13.8551 2.60287 13.2326 2.67737C13.8681 2.29639 14.356 1.69344 14.5855 0.974983C13.9916 1.32796 13.3321 1.58344 12.6317 1.72194C12.0702 1.12398 11.2697 0.75 10.3853 0.75C8.68592 0.75 7.30801 2.12791 7.30801 3.82729C7.30801 4.06828 7.33551 4.30326 7.38801 4.52875C4.83018 4.40076 2.56283 3.17534 1.04493 1.31346C0.779948 1.76793 0.628458 2.2964 0.628458 2.86036C0.628458 3.92779 1.17092 4.86973 1.99737 5.42169C1.4924 5.40569 1.01843 5.2672 0.602959 5.03672V5.07521C0.602959 6.56661 1.66439 7.81003 3.07129 8.09351C2.81331 8.16351 2.54133 8.20151 2.26085 8.20151C2.06236 8.20151 1.86937 8.182 1.68139 8.14601C2.07286 9.36842 3.20979 10.2584 4.5562 10.2834C3.50327 11.1083 2.17635 11.6008 0.73445 11.6008C0.485467 11.6008 0.240484 11.5863 0 11.5573C1.36191 12.4302 2.9793 12.9402 4.71718 12.9402C10.3773 12.9402 13.4726 8.251 13.4726 4.18477C13.4726 4.05128 13.4701 3.91829 13.4636 3.7868C14.0656 3.35183 14.5875 2.80986 15 2.1929Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                background-color: black;
+                border-radius: 50%;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                style="margin: 8px"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.23422 1.92743C3.23422 2.70561 2.6417 3.33538 1.7151 3.33538C0.824597 3.33538 0.232077 2.70561 0.250414 1.92743C0.232077 1.11143 0.824583 0.5 1.73285 0.5C2.64168 0.5 3.21645 1.11143 3.23422 1.92743ZM0.324912 13.5119V4.44763H3.14195V13.5113H0.324912V13.5119Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.39988 7.34032C5.39988 6.20973 5.36263 5.24588 5.32538 4.44879H7.77224L7.90231 5.69056H7.95791C8.32866 5.1158 9.25526 4.24536 10.7566 4.24536C12.6098 4.24536 14 5.46879 14 8.13684V13.5131H11.183V8.48983C11.183 7.32141 10.7755 6.52489 9.7561 6.52489C8.97734 6.52489 8.51433 7.0624 8.32924 7.581C8.25475 7.76666 8.21807 8.02567 8.21807 8.28583V13.5131H5.40101V7.34032H5.39988Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                background-color: black;
+                border-radius: 50%;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                style="margin: 10px"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.82189 2.59863C6.43231 2.52071 5.90614 2.4625 5.57523 2.4625C4.67919 2.4625 4.62099 2.85208 4.62099 3.47542V4.58504H6.86085L6.66561 6.88358H4.62099V13.875H1.81645V6.88358H0.375V4.58504H1.81645V3.16329C1.81645 1.21583 2.73174 0.125 5.02982 0.125C5.82823 0.125 6.41261 0.241876 7.17206 0.397709L6.82189 2.59863Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

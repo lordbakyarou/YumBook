@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+}
+
+.profile-img {
+  border-radius: 42px;
+  width: 42px;
+  height: 42px;
+}
+
+.custom-nav {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 1264px;
+  height: 355px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #252525 -16.65%, rgba(0, 0, 0, 0) 100%),
+    url("https://s3-alpha-sig.figma.com/img/7d4e/3fa3/3b0de3e0090f8898c24f6e2c892fee6f?Expires=1697414400&Signature=M6e4f3p7XDoJYAJaUqMLs41srJlgnH4kTW-4PBpiC64IrA-ECY0oN-QI081sZfdALzd09HJJ84KYZNj~Sdnb9qU915fSPYm6vbOHGniRbOlkX5aH3YGGocbNH6iZwRo4rMRYMYmZPvHjvV7KZML0xRrF0U679WM2MAzbN28y6Eh1nhsenmkIxoN9SJp2hhVZzgiH9S~8fnuHVtuX9KKRkXDndZkth1jsDw0e2XK17zkjviOwlZIplRMUA~qGefA6vvFwEqAzhngQ9OTTebd~2I2ZexnughinYLoqBdRUDKeJO9WF5AuwP3eO86QrmXmWT7~odaYe6eZn6ISJRfKhpA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+    lightgray 50% / contain no-repeat; /* Adjust the background-size value */
+  background-position: center;
+  background-size: 140ch;
+  flex-shrink: 0;
+  padding: 80px;
+}
+
+#hero-header {
+  color: #dc582a;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127%; /* 30.48px */
+}
+
+#hero-main {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 127%;
+  width: 446px;
+}
+
+#hero-footer {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127%; /* 25.4px */
+}
+
+#container-title {
+  color: #252525;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.filter-button {
+  display: flex;
+  gap: 20px;
+}
+
+.filter-button > button {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127%; /* 20.32px */
+  align-items: center;
+}
+
+#all-recepie {
+  width: 236.8px;
+  height: 86px;
+  padding: 30px 29.8px 30px 29px;
+  border-radius: 10px;
+  background: #eaaa00;
+}
+
+#veg-recepie {
+  width: 236.8px;
+  height: 86px;
+  padding: 30px 29.8px 30px 29px;
+  border-radius: 10px;
+  background: #c4d600;
+}
+
+#non-veg-recepie {
+  width: 236.8px;
+  height: 86px;
+  padding: 30px 29.8px 30px 29px;
+  border-radius: 10px;
+  background: #dc582a;
+}
+
+.main-container {
+  display: flex;
+  gap: 100px;
+}
+
+.side-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+
+.side-filter :first-child {
+  color: #252525;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#rating {
+  color: #252525;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.checkboxSpan {
+  color: #253d4e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.checkbox-input :checked {
+  background-color: green; /* Change to your desired green color */
+  border-color: green; /* Change to match the background color */
+}
+
+.receipies {
+  margin-left: 100px;
+}
+
+.divcustom {
+  width: 305px;
+  height: 315px;
+  border-radius: 16px;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05),
+    0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.divcustom > img {
+  width: 289px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.divcustom > p {
+  color: #a1a1a1;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 240% */
+  padding-left: 12px;
+  margin-bottom: 0rem;
+}
+
+.recipe-name {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+
+.recipe-name > p {
+  color: #252525;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+
+.recipe-name > span {
+  color: var(--Grey, #adadad);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.TimeAndLike {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+
+.TimeAndLike > p {
+  color: #dc582a;
+  /* Headings/h3 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.523%; /* 27.305px */
+}
+
+.company-footer-image {
+  width: 96px;
+  height: 46px;
+  flex-shrink: 0;
+  background: url("https://s3-alpha-sig.figma.com/img/e0ef/4f61/967cc7d034dc411ca2013fff2fed228d?Expires=1697414400&Signature=Tmo86em8dU4MV9UwAFe0GIREINC23PXDE7ELh-R0qQAXdAzAxj06tLLUzCz5aaklBVY0R0W3WEbsVCUTPpGxEjK~DQxFtrv9jYSAwPCSyXFr8MvuqBD-tNupe2SDXVlTXLETmR~gNQiSX7SW4Z8Hqyu-DpdLsb~tcBEZx8kefCWQf62VX4b18po8o2sZhCheAjmh5JgwKk~2DrBmSwp~4oZ09Y1oZKpYchUC35a3Hkdvh0959ykdS-Y37BID1XTqrOsHJrG8PcrW9Ptakko1ZloGXD9x08KnPVn4kiaWTFaLDikLNkViXOX48svR-zK0UuD0jHmlO7D9prZdfhdvdQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+    lightgray 50% / cover no-repeat;
+  background-size: 9.5ch;
+}
+
+.company-footer-description {
+  color: #253d4e;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 290px;
+}
+
+.company-pages {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-pages > ul {
+  list-style-type: none;
+}
+
+.company-pages > ul > span {
+  color: #253d4e;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 130% */
+}
+
+.company-pages > ul > li {
+  color: var(--black-alpha-60, rgba(0, 0, 0, 0.6));
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  margin-top: 24px;
+}
+
+.company-resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-resources > ul {
+  list-style-type: none;
+}
+
+.company-resources > ul > span {
+  color: #253d4e;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 130% */
+}
+
+.company-resources > ul > li {
+  color: var(--black-alpha-60, rgba(0, 0, 0, 0.6));
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  margin-top: 24px;
+}
+
+.companyFooterSubscribe {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.company-footer-subscribe-description {
+  color: var(--black-alpha-60, rgba(0, 0, 0, 0.6));
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.28px;
+  align-self: stretch;
+}
+
+.custom-footer {
+  padding: 60px 200px;
+}
