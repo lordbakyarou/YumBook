@@ -212,7 +212,7 @@
   flex-shrink: 0;
 }
 
-.divcustom > img {
+.divcustom > div > img {
   width: 289px;
   height: 200px;
   flex-shrink: 0;
@@ -375,7 +375,7 @@
 }
 
 @media screen and (max-width: 1420px) and (min-width: 1200px) {
-  .divcustom > img {
+  .divcustom > div > img {
     width: 249px;
     height: 160px;
     flex-shrink: 0;
@@ -390,7 +390,7 @@
 }
 /* and (min-width: 1200px) */
 @media screen and (max-width: 1199px) and (min-width: 992px) {
-  .divcustom > img {
+  .divcustom > div > img {
     width: 199px;
     height: 110px;
     flex-shrink: 0;
@@ -402,10 +402,25 @@
     justify-content: start;
     gap: 80px;
   }
+  .hero {
+    background-size: 100ch;
+  }
+
+  #hero-header {
+    font-size: 20px;
+  }
+
+  #hero-main {
+    font-size: 30px;
+  }
+
+  #hero-footer {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  .divcustom > img {
+  .divcustom > div > img {
     width: 149px;
     height: 120px;
     flex-shrink: 0;
@@ -441,6 +456,22 @@
     gap: 20px;
     align-items: center;
   }
+
+  .hero {
+    background-size: 80ch;
+  }
+
+  #hero-header {
+    font-size: 20px;
+  }
+
+  #hero-main {
+    font-size: 30px;
+  }
+
+  #hero-footer {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -457,7 +488,7 @@
   .receipies {
     margin: 0;
   }
-  .divcustom > img {
+  .divcustom > div > img {
     width: 149px;
     height: 120px;
     flex-shrink: 0;
@@ -499,5 +530,55 @@
   }
   .companyFooterSubscribe {
     display: none;
+  }
+
+  .hero {
+    background-size: 60ch;
+    padding: 70px;
+  }
+
+  #hero-header {
+    font-size: 15px;
+  }
+
+  #hero-main {
+    font-size: 25px;
+    width: 270px;
+  }
+
+  #hero-footer {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .custom-coloum-div {
+    flex-direction: column;
+  }
+
+  #image-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divcustom > div > img {
+    width: 320px;
+    height: 250px;
+    border-radius: 16px;
+  }
+
+  .divcustom > p {
+    font-size: 12px;
+  }
+  .recipe-name > p {
+    font-size: 15px;
+  }
+
+  .recipe-name > span {
+    font-size: 12px;
+  }
+
+  .TimeAndLike > p {
+    font-size: 19px;
   }
 }

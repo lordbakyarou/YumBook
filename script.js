@@ -179,7 +179,6 @@ searchInput.addEventListener("input", () => {
 
 //This will reload the page
 function clearCurrentState() {
-  console.log(recipes.children);
   const clearRecipe = recipes.children;
   const length = clearRecipe.length;
   for (let i = 0; i < length; i++) {
@@ -208,7 +207,6 @@ ratingBelow4.addEventListener("click", () => {
     ratingAbove4.checked = false;
     const vegRecipeList = recipeList.filter((recipe) => recipe.rating < 4);
     clearCurrentState();
-    console.log(vegRecipeList);
     loadRecipes(vegRecipeList);
   } else {
     clearCurrentState();
@@ -216,6 +214,7 @@ ratingBelow4.addEventListener("click", () => {
   }
 });
 
+//where recipe are loaded from json
 function loadRecipes(recipeList) {
   let i = 0;
   let j = 0;
@@ -229,8 +228,11 @@ function loadRecipes(recipeList) {
       const recipeInnerDiv = document.createElement("div");
       recipeInnerDiv.className = "divcustom";
       recipeInnerDiv.id = j;
+
+      //custom div created
       recipeInnerDiv.innerHTML = `
-    <img src="${recipeList[j].imageSrc}" alt="" />
+      <div id="image-div"> <img src="${recipeList[j].imageSrc}" alt=""/></div>
+   
     <p>${recipeList[j].type}</p>
     <div class="recipe-name">
       <p>${recipeList[j].name}</p>
@@ -310,6 +312,7 @@ onClick = likeButton(this)
   }
 }
 
+//like button functionality
 function likeButton(event) {
   event.children[1].setAttribute(
     "fill",
@@ -321,13 +324,12 @@ function likeButton(event) {
     !recipeList[event.parentNode.parentNode.parentNode.id];
 }
 
+//hamburger navigation
 hamburgerButton.addEventListener("click", () => {
-  console.log(mobileNav.display);
   mobileNav.style.display = "block";
 });
 
 hamburgerButton.addEventListener("blur", () => {
-  console.log(mobileNav.display);
   mobileNav.style.display = "none";
 });
 
