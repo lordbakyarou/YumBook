@@ -217,7 +217,7 @@ function loadRecipes(recipeList) {
   while (i < recipeList.length) {
     let count = 0;
     const recipeDiv = document.createElement("div");
-    recipeDiv.className = "d-flex gap-3 pb-5";
+    recipeDiv.className = "d-flex gap-3 pb-5 custom-coloum-div";
     for (let j = i; j < recipeList.length; j++) {
       const recipeInnerDiv = document.createElement("div");
       recipeInnerDiv.className = "divcustom";

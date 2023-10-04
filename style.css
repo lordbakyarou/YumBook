@@ -22,19 +22,19 @@
 .container {
   display: flex;
   flex-direction: column;
+  box-sizing: content-box;
 }
 
 .hero {
-  width: 1264px;
-  height: 355px;
   border-radius: 30px;
   background: linear-gradient(90deg, #252525 -16.65%, rgba(0, 0, 0, 0) 100%),
     url("https://s3-alpha-sig.figma.com/img/7d4e/3fa3/3b0de3e0090f8898c24f6e2c892fee6f?Expires=1697414400&Signature=M6e4f3p7XDoJYAJaUqMLs41srJlgnH4kTW-4PBpiC64IrA-ECY0oN-QI081sZfdALzd09HJJ84KYZNj~Sdnb9qU915fSPYm6vbOHGniRbOlkX5aH3YGGocbNH6iZwRo4rMRYMYmZPvHjvV7KZML0xRrF0U679WM2MAzbN28y6Eh1nhsenmkIxoN9SJp2hhVZzgiH9S~8fnuHVtuX9KKRkXDndZkth1jsDw0e2XK17zkjviOwlZIplRMUA~qGefA6vvFwEqAzhngQ9OTTebd~2I2ZexnughinYLoqBdRUDKeJO9WF5AuwP3eO86QrmXmWT7~odaYe6eZn6ISJRfKhpA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
     lightgray 50% / contain no-repeat; /* Adjust the background-size value */
   background-position: center;
-  background-size: 140ch;
+  background-size: 160ch;
   flex-shrink: 0;
   padding: 80px;
+  width: auto;
 }
 
 #hero-header {
@@ -117,6 +117,7 @@
 
 .main-container {
   display: flex;
+  justify-content: start;
   gap: 100px;
 }
 
@@ -134,6 +135,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.side-filter > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #rating {
@@ -161,11 +167,16 @@
 
 .receipies {
   margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-coloum-div {
+  display: flex;
+  justify-content: start;
 }
 
 .divcustom {
-  width: 305px;
-  height: 315px;
   border-radius: 16px;
   box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05),
     0px 0px 1px 0px rgba(12, 26, 75, 0.24);
@@ -241,6 +252,11 @@
   background: url("https://s3-alpha-sig.figma.com/img/e0ef/4f61/967cc7d034dc411ca2013fff2fed228d?Expires=1697414400&Signature=Tmo86em8dU4MV9UwAFe0GIREINC23PXDE7ELh-R0qQAXdAzAxj06tLLUzCz5aaklBVY0R0W3WEbsVCUTPpGxEjK~DQxFtrv9jYSAwPCSyXFr8MvuqBD-tNupe2SDXVlTXLETmR~gNQiSX7SW4Z8Hqyu-DpdLsb~tcBEZx8kefCWQf62VX4b18po8o2sZhCheAjmh5JgwKk~2DrBmSwp~4oZ09Y1oZKpYchUC35a3Hkdvh0959ykdS-Y37BID1XTqrOsHJrG8PcrW9Ptakko1ZloGXD9x08KnPVn4kiaWTFaLDikLNkViXOX48svR-zK0UuD0jHmlO7D9prZdfhdvdQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
     lightgray 50% / cover no-repeat;
   background-size: 9.5ch;
+}
+
+.footerDescription {
+  display: flex;
+  justify-content: space-around;
 }
 
 .company-footer-description {
@@ -331,4 +347,131 @@
 
 .custom-footer {
   padding: 60px 200px;
+}
+
+@media screen and (max-width: 1420px) and (min-width: 1200px) {
+  .divcustom > img {
+    width: 249px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: start;
+    gap: 80px;
+  }
+}
+/* and (min-width: 1200px) */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .divcustom > img {
+    width: 199px;
+    height: 110px;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: start;
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .divcustom > img {
+    width: 149px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: start;
+    gap: 0px;
+  }
+
+  .recipe-name > p {
+    font-size: 10px;
+  }
+
+  .recipe-name > span {
+    font-size: 8px;
+  }
+
+  .TimeAndLike > p {
+    font-size: 10px;
+  }
+
+  .checkboxSpan {
+    font-size: 10px;
+  }
+
+  .footerDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .side-filter > div {
+    display: flex;
+    gap: 20px;
+  }
+  .receipies {
+    margin: 0;
+  }
+  .divcustom > img {
+    width: 149px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+  .recipe-name > p {
+    font-size: 10px;
+  }
+
+  .recipe-name > span {
+    font-size: 8px;
+  }
+
+  .TimeAndLike > p {
+    font-size: 10px;
+  }
+
+  .checkboxSpan {
+    font-size: 10px;
+  }
+
+  .custom-coloum-div {
+    gap: 10px;
+  }
+
+  .footerDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .company-pages {
+    display: none;
+  }
+  .company-resources {
+    display: none;
+  }
+  .companyFooterSubscribe {
+    display: none;
+  }
 }
