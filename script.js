@@ -132,6 +132,9 @@ const searchInput = document.getElementById("search");
 const ratingAbove4 = document.getElementById("above4rating");
 const ratingBelow4 = document.getElementById("below4rating");
 
+const hamburgerButton = document.getElementById("custom-hamburger-button");
+
+const mobileNav = document.getElementById("mobile_nav");
 //filters
 
 //All Recipes list
@@ -313,6 +316,16 @@ function likeButton(event) {
   recipeList[event.parentNode.parentNode.parentNode.id] =
     !recipeList[event.parentNode.parentNode.parentNode.id];
 }
+
+hamburgerButton.addEventListener("click", () => {
+  console.log(mobileNav.display);
+  mobileNav.style.display = "block";
+});
+
+hamburgerButton.addEventListener("blur", () => {
+  console.log(mobileNav.display);
+  mobileNav.style.display = "none";
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   loadRecipes(recipeList);

@@ -19,6 +19,31 @@
   line-height: normal;
 }
 
+#custom-hamburger-button {
+  border: none;
+  outline: none;
+}
+
+.mobile_nav {
+  background-color: white;
+  width: 70vw;
+  height: 390%;
+  position: absolute;
+  z-index: 90;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: none;
+}
+
+.mobile_nav > ul {
+  list-style-type: none;
+  color: var(--Black, #253d4e);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .container {
   display: flex;
   flex-direction: column;
