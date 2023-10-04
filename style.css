@@ -44,6 +44,10 @@
   line-height: normal;
 }
 
+.nav-item > a:hover {
+  color: #509e2f;
+}
+
 .container {
   display: flex;
   flex-direction: column;
