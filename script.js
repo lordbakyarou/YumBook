@@ -165,6 +165,7 @@ nonVegRecipe.addEventListener("click", () => {
 });
 
 searchInput.addEventListener("click", () => {
+  console.log(searchInput);
   searchInput.innerText = "";
 });
 
