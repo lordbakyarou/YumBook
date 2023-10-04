@@ -121,6 +121,9 @@ const recipeList = [
   },
 ];
 
+//create global filter for recipe list
+
+//vars
 const allRecipe = document.getElementById("all-recepie");
 const vegRecipe = document.getElementById("veg-recepie");
 const nonVegRecipe = document.getElementById("non-veg-recepie");
@@ -219,7 +222,6 @@ function loadRecipes(recipeList) {
   let i = 0;
   let j = 0;
 
-  console.log(recipeList);
   while (i < recipeList.length) {
     let count = 0;
     const recipeDiv = document.createElement("div");
