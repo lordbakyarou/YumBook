@@ -208,6 +208,7 @@ ratingBelow4.addEventListener("click", () => {
     ratingAbove4.checked = false;
     const vegRecipeList = recipeList.filter((recipe) => recipe.rating < 4);
     clearCurrentState();
+    console.log(vegRecipeList);
     loadRecipes(vegRecipeList);
   } else {
     clearCurrentState();
@@ -217,11 +218,14 @@ ratingBelow4.addEventListener("click", () => {
 
 function loadRecipes(recipeList) {
   let i = 0;
+  let j = 0;
+
+  console.log(recipeList);
   while (i < recipeList.length) {
     let count = 0;
     const recipeDiv = document.createElement("div");
     recipeDiv.className = "d-flex gap-3 pb-5 custom-coloum-div";
-    for (let j = i; j < recipeList.length; j++) {
+    for (j = i; j < recipeList.length; j++) {
       const recipeInnerDiv = document.createElement("div");
       recipeInnerDiv.className = "divcustom";
       recipeInnerDiv.id = j;
@@ -300,7 +304,7 @@ onClick = likeButton(this)
       }
       count++;
     }
-
+    i = j;
     i++;
     recipes.appendChild(recipeDiv);
   }
