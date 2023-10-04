@@ -581,4 +581,14 @@
   .TimeAndLike > p {
     font-size: 19px;
   }
+
+  #all-recepie {
+    padding: 0px;
+  }
+  #veg-recepie {
+    padding: 0px;
+  }
+  #non-veg-recepie {
+    padding: 0px;
+  }
 }
