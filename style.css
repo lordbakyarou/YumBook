@@ -275,12 +275,11 @@
 }
 
 .company-footer-image {
-  width: 96px;
+  width: 115px;
   height: 46px;
   flex-shrink: 0;
-  background: url("https://s3-alpha-sig.figma.com/img/e0ef/4f61/967cc7d034dc411ca2013fff2fed228d?Expires=1697414400&Signature=Tmo86em8dU4MV9UwAFe0GIREINC23PXDE7ELh-R0qQAXdAzAxj06tLLUzCz5aaklBVY0R0W3WEbsVCUTPpGxEjK~DQxFtrv9jYSAwPCSyXFr8MvuqBD-tNupe2SDXVlTXLETmR~gNQiSX7SW4Z8Hqyu-DpdLsb~tcBEZx8kefCWQf62VX4b18po8o2sZhCheAjmh5JgwKk~2DrBmSwp~4oZ09Y1oZKpYchUC35a3Hkdvh0959ykdS-Y37BID1XTqrOsHJrG8PcrW9Ptakko1ZloGXD9x08KnPVn4kiaWTFaLDikLNkViXOX48svR-zK0UuD0jHmlO7D9prZdfhdvdQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
-    lightgray 50% / cover no-repeat;
-  background-size: 9.5ch;
+  background: url("YumBook.png"), lightgray 50% / cover no-repeat;
+  background-size: 11.3ch;
 }
 
 .footerDescription {
